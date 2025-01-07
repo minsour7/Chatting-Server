@@ -14,3 +14,4 @@ C:\Users\minsu\Desktop\ChatServer\ChatServer\obj\Debug\net8.0-windows\refint\Cha
 C:\Users\minsu\Desktop\ChatServer\ChatServer\obj\Debug\net8.0-windows\ChatServer.pdb
 C:\Users\minsu\Desktop\ChatServer\ChatServer\obj\Debug\net8.0-windows\ChatServer.genruntimeconfig.cache
 C:\Users\minsu\Desktop\ChatServer\ChatServer\obj\Debug\net8.0-windows\ref\ChatServer.dll
+C:\Users\minsu\Desktop\ChatServer\ChatServer\obj\Debug\net8.0-windows\ChatServer.sourcelink.json

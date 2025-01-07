@@ -18,8 +18,8 @@ namespace ChatServer
             InitializeComponent();
         }
 
-        TcpListener chatServer = new TcpListener(IPAddress.Parse("127.0.0.1"), 2022);
-        public static ArrayList clientSocetArray = new ArrayList();
+        TcpListener chatServer = new TcpListener(IPAddress.Parse("127.0.0.1"), 2025);
+        public static ArrayList clientSocketArray = new ArrayList();
 
         private void btnStart_Click(object sender, EventArgs e)
         {
@@ -39,11 +39,11 @@ namespace ChatServer
                 else
                 {
                     chatServer.Stop();
-                    foreach (Socket socket in Form1.clientSocetArray)
+                    foreach (Socket socket in Form1.clientSocketArray)
                     {
                         socket.Close();
                     }
-                    clientSocetArray.Clear();
+                    clientSocketArray.Clear();
 
                     lblMsg.Text = "Server 종료 상태";
                     lblMsg.Tag = "Stop";
@@ -73,7 +73,7 @@ namespace ChatServer
                 }
                 catch (Exception ex)
                 {
-                    Form1.clientSocetArray.Remove(socketClient);
+                    Form1.clientSocketArray.Remove(socketClient);
                     break;
                 }
             }
@@ -114,7 +114,7 @@ namespace ChatServer
             this.txtChatMsg = txtChatMsg; // 채팅 메세지 출력을 위한 TextBox
             this.socketClient = socketClient; // 클라이언트 접속 소켓
             this.netStream = new NetworkStream(socketClient);
-            Form1.clientSocetArray.Add(socketClient); // 클라이언트 접속소켓을 List 추가
+            Form1.clientSocketArray.Add(socketClient); // 클라이언트 접속소켓을 List 추가
             this.strReader = new StreamReader(netStream);
             this.form1 = form1;
         }
@@ -125,17 +125,17 @@ namespace ChatServer
             {
                 try
                 {
-                    string lstMessage = strReader.ReadLine(); // 문자열 받음
-                    if (lstMessage != null && lstMessage != "")
+                    string IstMessage = strReader.ReadLine(); // 문자열 받음
+                    if (IstMessage != null && IstMessage != "")
                     {
-                        form1.SetText(lstMessage + "\r\n");
-                        byte[] bytSand_Data = Encoding.Default.GetBytes(lstMessage);
-                        lock (Form1.clientSocetArray)
+                        form1.SetText(IstMessage + "\r\n");
+                        byte[] bytSend_Data = Encoding.Default.GetBytes(IstMessage + "\r\n");
+                        lock (Form1.clientSocketArray)
                         {
-                            foreach (Socket socket in Form1.clientSocetArray)
+                            foreach (Socket socket in Form1.clientSocketArray)
                             {
                                 NetworkStream stream = new NetworkStream(socket);
-                                stream.Write(bytSand_Data, 0, bytSand_Data.Length);
+                                stream.Write(bytSend_Data, 0, bytSend_Data.Length);
                             }
                         }
                     }
@@ -143,7 +143,7 @@ namespace ChatServer
                 catch (Exception ex)
                 {
                     MessageBox.Show("채팅 오류 :" + ex.ToString());
-                    Form1.clientSocetArray.Remove(socketClient);
+                    Form1.clientSocketArray.Remove(socketClient);
                     break;
                 }
             }

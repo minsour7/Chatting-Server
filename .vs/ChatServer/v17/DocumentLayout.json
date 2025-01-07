@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{1CA1B1CE-A63A-4B59-9B1E-AC26E718269B}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CA1B1CE-A63A-4B59-9B1E-AC26E718269B}|ChatServer\\ChatServer.csproj|c:\\users\\minsu\\desktop\\chatserver\\chatserver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1CA1B1CE-A63A-4B59-9B1E-AC26E718269B}|ChatServer\\ChatServer.csproj|C:\\Users\\minsu\\Desktop\\ChatServer\\chatserver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1CA1B1CE-A63A-4B59-9B1E-AC26E718269B}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "ChatServer\\Form1.cs",
               "ToolTip": "C:\\Users\\minsu\\Desktop\\ChatServer\\ChatServer\\Form1.cs",
               "RelativeToolTip": "ChatServer\\Form1.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAADgvyEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAjwHQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T09:00:07.979Z",
               "EditorCaption": ""
@@ -42,8 +42,7 @@
               "ToolTip": "C:\\Users\\minsu\\Desktop\\ChatServer\\ChatServer\\Form1.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "ChatServer\\Form1.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T08:54:33.013Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2024-12-30T08:54:33.013Z"
             }
           ]
         }
